@@ -148,7 +148,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 141.166626, 157.0, 112.0, 24.0 ],
+					"patching_rect" : [ 1029.0, 724.0, 112.0, 24.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 67.5, 325.833374, 82.0, 24.0 ],
 					"style" : "",
@@ -256,7 +256,7 @@
 					"presentation_linecount" : 6,
 					"presentation_rect" : [ 231.0, 323.833374, 712.0, 100.0 ],
 					"style" : "",
-					"text" : "Any control which is part of the pattr system is automatically added to the midi-learn system\n - with midi learn mode on, click on any of the control below with your mouse\n - a pink hilited control is a control that currently is not assigned\n - a green hiloted control is a control that is currently assigned to a controller\n - with a control hilited, simple twiddle a knob on any of your midi controllers to assign that controller to the object\n - turn midi learn mode off to start using the assigned controls",
+					"text" : "Any control which is part of the pattr system is automatically added to the midi-learn system\n - with midi learn mode on, click on any of the controls below with your mouse\n - a pink hilited control is a control that currently is not assigned\n - a green hilited control is a control that is currently assigned to a controller\n - with a control hilited, simply twiddle a knob on any of your midi controllers to assign that controller to the object\n - turn midi learn mode off to start using the assigned controls",
 					"textcolor" : [ 0.65098, 0.666667, 0.662745, 1.0 ]
 				}
 
@@ -703,7 +703,7 @@
 ,
 					"style" : "",
 					"text" : "autopattr",
-					"varname" : "u816000353"
+					"varname" : "u836000353"
 				}
 
 			}
@@ -1061,14 +1061,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-397::obj-1789" : [ "scale1[1]", "phase mod", 0 ],
+			"obj-14" : [ "scale1[5]", "phase mod", 0 ],
+			"obj-43" : [ "live.tab[1]", "live.tab[2]", 0 ],
 			"obj-6::obj-1::obj-1789" : [ "scale1[2]", "phase mod", 0 ],
+			"obj-397::obj-1789" : [ "scale1[1]", "phase mod", 0 ],
 			"obj-13" : [ "live.menu[1]", "live.menu", 0 ],
-			"obj-44" : [ "live.toggle[1]", "live.toggle", 0 ],
 			"obj-48" : [ "scale1[6]", "phase mod", 0 ],
 			"obj-47" : [ "scale1[3]", "phase mod", 0 ],
-			"obj-14" : [ "scale1[5]", "phase mod", 0 ],
-			"obj-43" : [ "live.tab[1]", "live.tab[2]", 0 ]
+			"obj-44" : [ "live.toggle[1]", "live.toggle", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
@@ -1157,6 +1157,11 @@
 , 			{
 				"name" : "Luca",
 				"default" : 				{
+					"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
+					"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
+					"fontname" : [ "Open Sans Semibold" ],
+					"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
+					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
 					"accentcolor" : [ 0.32549, 0.345098, 0.372549, 1.0 ],
 					"elementcolor" : [ 0.786675, 0.801885, 0.845022, 1.0 ],
 					"bgfillcolor" : 					{
@@ -1168,12 +1173,7 @@
 						"proportion" : 0.39,
 						"autogradient" : 0
 					}
-,
-					"selectioncolor" : [ 0.720698, 0.16723, 0.080014, 1.0 ],
-					"color" : [ 0.475135, 0.293895, 0.251069, 1.0 ],
-					"bgcolor" : [ 0.904179, 0.895477, 0.842975, 0.56 ],
-					"textcolor_inverse" : [ 0.239216, 0.254902, 0.278431, 1.0 ],
-					"fontname" : [ "Open Sans Semibold" ]
+
 				}
 ,
 				"parentstyle" : "",
@@ -1182,8 +1182,9 @@
 , 			{
 				"name" : "dark-night-patch",
 				"default" : 				{
-					"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"textcolor" : [ 0.862745, 0.870588, 0.878431, 1.0 ],
+					"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ],
+					"accentcolor" : [ 0.952941, 0.564706, 0.098039, 1.0 ],
 					"bgfillcolor" : 					{
 						"type" : "gradient",
 						"color1" : [ 0.376471, 0.384314, 0.4, 1.0 ],
@@ -1192,8 +1193,7 @@
 						"angle" : 270.0,
 						"proportion" : 0.39
 					}
-,
-					"patchlinecolor" : [ 0.439216, 0.74902, 0.254902, 0.898039 ]
+
 				}
 ,
 				"parentstyle" : "",
