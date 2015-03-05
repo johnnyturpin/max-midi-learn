@@ -2,7 +2,7 @@
 
 A simple to use - plug-n-play - MIDI learning system for Max/MSP projects.
 
-![max-midi-learn](http://i.imgur.com/HWzNhyX.png)
+![max-midi-learn](http://i.imgur.com/jE7fVHi.png)
 
 ## Features
 
