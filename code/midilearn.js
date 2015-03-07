@@ -5,8 +5,6 @@ inlets = 1;
 var midilearnobjs = [];
 var midiobjects = [];
 var mididevices = [];
-
-var i = 0;
 var toggleList = {};
 
 // these are the two maps which are persisted to disk
@@ -151,7 +149,7 @@ function routemidi(device, chan, cc, val) {
 
 		var objList = midiRouter[device][chanStr][ccStr];
 		if (objList) {
-			for (i = 0; i < objList.length; i++) {
+			for (var i = 0; i < objList.length; i++) {
 				// calling getnameddeep seems to crash max if called to frequently/quickly.... wtf?
 				var task = new Task(routeMidiTask, this, objList[i], val);
 				task.schedule((i + 1) * 20);
@@ -188,7 +186,7 @@ function clientlist(name) {
 function midion() {
 
 	logmsg("creating midi objects");
-	for (i = 0; i < mididevices.length; i++) {
+	for (var i = 0; i < mididevices.length; i++) {
 		var x = 100 + 250 * i;
 		var y = 100;
 
@@ -232,7 +230,7 @@ function midioff() {
 
 	logmsg("cleaning up midi objects");
 	if (midiobjects.length) {
-		for (i = 0; i < midiobjects.length; i++) {
+		for (var i = 0; i < midiobjects.length; i++) {
 			var objlist = midiobjects[i];
 			for (var k = 0; k < objlist.length; k++) {
 				this.patcher.remove(objlist[k]);
@@ -367,7 +365,7 @@ function clear_midilearnobjs() {
 
 	logmsg("cleaning up learn-mode objects");
 	if (midilearnobjs && midilearnobjs.length > 0) {
-		for (i = 0; i < midilearnobjs.length; i++) {
+		for (var i = 0; i < midilearnobjs.length; i++) {
 			var items = midilearnobjs[i];
 			for (var k = 0; k < items.length; k++) {
 				var thispatcher = items[k].patcher;
@@ -441,7 +439,7 @@ function findroot() {
 function getnameddeep(name) {
 	var tree = name.split("::");
 	var thispatcher = findroot();
-	for (i = 0; i < tree.length - 1; i++) {
+	for (var i = 0; i < tree.length - 1; i++) {
 		thispatcher = thispatcher.getnamed(tree[i]).subpatcher();
 	}
 	return thispatcher.getnamed(tree[tree.length - 1]);
